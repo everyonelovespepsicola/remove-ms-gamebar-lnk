@@ -1,3 +1,5 @@
+# Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted
+
 # To uninstall it open a powershell as administrator and uninstall it with the following command:
 
 Get-AppxPackage Microsoft.XboxGamingOverlay | Remove-AppxPackage
