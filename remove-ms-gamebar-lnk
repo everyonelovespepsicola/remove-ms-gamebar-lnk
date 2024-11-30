@@ -4,7 +4,7 @@ Get-AppxPackage Microsoft.XboxGamingOverlay | Remove-AppxPackage
 reg add HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\GameDVR /f /t REG_DWORD /v "AppCaptureEnabled" /d 0
 reg add HKEY_CURRENT_USER\System\GameConfigStore /f /t REG_DWORD /v "GameDVR_Enabled" /d 0
 
-## AveYo: fix ms-gamebar annoyance after uninstalling Xbox
+##  fix ms-gamebar annoyance after uninstalling Xbox
 reg add HKCR\ms-gamebar /f /ve /d URL:ms-gamebar 2>&1 >''
 reg add HKCR\ms-gamebar /f /v "URL Protocol" /d "" 2>&1 >''
 reg add HKCR\ms-gamebar /f /v "NoOpenWith" /d "" 2>&1 >''
